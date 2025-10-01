@@ -17,6 +17,61 @@ html {
   line-height: 1.4;
 }
 
+
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.search-box{
+  position: relative;
+  display: inline-block;
+}
+
+
+.search-box input {
+  padding: 10px 12px 10px 40px; /* extra plats till höger för ikonen */
+  border: 0.3px solid #ccc;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* lätt skugga */
+  outline: none;                /* tar bort standardfokusramen */
+  width: 400px; /* Sätt önskad bredd */
+
+}
+
+.search-box img {
+  position: absolute;
+  left: 12px;       /* justerar horisontellt */
+  top: 50%;
+  transform: translateY(-50%); /* centrerar vertikalt */
+  width: 10px;        /* justera storlek på ikonen */
+  height: 10px;
+  pointer-events: none; /* så att man kan klicka i inputen utan problem */
+  opacity: 0.6;       /* lite transparens om du vill */
+}
+
+h1{
+  font-size: 4em;
+  font-family: 'Oswald', sans-serif;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  padding: 6px;
+}
+
+.navbar h1{
+  display: inline-block;
+  padding: 5px;
+  margin: 0 5px;
+  font-weight: 200;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
